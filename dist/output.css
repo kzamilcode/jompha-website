@@ -1587,6 +1587,10 @@ video {
     width: auto;
   }
 
+  .md\:grid-cols-\[380px_minmax\(900px\2c _1fr\)\] {
+    grid-template-columns: 380px minmax(900px, 1fr);
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
