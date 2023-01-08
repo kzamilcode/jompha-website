@@ -45,6 +45,23 @@ color: #CBCBCB;
 line-height: 20px;
 opacity: 0.8;
 }
+
+@media screen and (max-width: 1468px) {
+  .owl-buttons .owl-prev:before,
+  .owl-buttons .owl-next:before{
+ 
+  font-size: 40px;
+  
+  }
+  .owl-theme .owl-controls .owl-page span {
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50%;
+    background: url("../src/img/Ellipse\ 12.png") no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease-in-out 0s;
+}
+}
 .owl-buttons .owl-next:before{
 content: "→";
 }
@@ -133,3 +150,70 @@ opacity: 1;
     display: block;
     transition: all .3s ease-in;
 }
+
+
+/******/
+#toggle:checked ~ label div.toggle-bot,
+#toggleTwo:checked ~ label div.toggle-bot{
+ @apply translate-x-7
+
+}
+
+@keyframes one{
+  0%{
+transform: scale(0);
+  }
+  100%{
+transform: scale(1.2);
+  }
+}
+
+@keyframes two{
+  0%{
+transform: scale(0);
+  }
+  100%{
+transform: scale(1.2);
+  }
+}
+
+
+/**---
+  header curcle -animation image
+  --**/ 
+
+/**---
+  Humburger-menu
+  --**/
+
+.humburger-middle{
+  transform: translateY(7px);
+}
+.humburger-bottom{
+  transform: translateY(14px);
+}
+
+.open{
+  transform: rotate(90deg);
+  transform: translateY(0px);
+  top:8px
+
+}
+.open .humburger-top{
+  transform: rotate(45deg);
+  translate: (6px);
+  transform: rotateY(6px);
+}
+.open .humburger-middle{
+  display: none;
+}
+.open .humburger-bottom{
+  transform: rotate(-45deg);
+  translate: (6px);
+  transform: rotateY(-6px);
+}
+
+/**---
+  Humburger-menu
+  --**/
+
