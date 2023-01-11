@@ -2189,6 +2189,10 @@ video {
     width: 100%;
   }
 
+  .lg\:w-\[655px\] {
+    width: 655px;
+  }
+
   .lg\:max-w-\[500px\] {
     max-width: 500px;
   }
