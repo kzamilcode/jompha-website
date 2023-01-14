@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn1:hover span{
+  width: 15px;
+
+
+ 
+}
 .ring-two{
  
   -webkit-animation: ring 3s linear infinite;
