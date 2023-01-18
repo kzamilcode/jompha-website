@@ -16,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="  overflow-x-hidden bg-no-repeat bg-[length:100%] bg-inherit font-inter" style="background-image:url('./src/img/aboutUs/bg.png')">
-<section class="px-5 lg:px-0">
+
    <header class="2xl:pt-14 2xl:mb-36 mb-10 lg:mb-20 pt-6 bg-no-repeat bg-inherit" style="background-image:url('./src/img/product/Rectangle\ 134.png')">
 
     <div class="bg-no-repeat bg-[length:100%] bg-inherit" style="background-image:url('./src/img/blog/Group\ 228.png')">
@@ -24,7 +24,7 @@
         <!----navbar-->
  <nav class="relative container mx-auto z-50">
     <!--flex container-->
-    <div class="flex mx-5 lg:mx-0 items-center justify-between">
+    <div class="flex px-3 lg:px-0 items-center justify-between">
       <!--logo-->
       <div class=" bg-contain bg-center bg-no-repeat">
         <a href="./index.html" class="flex">
@@ -45,11 +45,20 @@
             </li>
             
             <li>
-                <a href="./blog.html">
-                  <h1 class="py-4 font-medium transition duration-200"
-                      >Blog</h1>
+              <a href="./blog.html" >
+                <div class="dropdown text-center inline-block relative">
+                  <button class=" py-4 inline-flex items-center">
+                    <span class="mr-1">Blog</span>
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                  </button>
+                  <ul class="dropdown-menu absolute hidden pt-1">
+                    <li class=""><a class="bg-gray-200 relative -top-5 -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
+              
+                  </ul>
+                </div>
               </a>
-              </li>
+            
+            </li> 
             <li>
               <a href="./product.html">
                 <h1 class="py-4 font-medium  transition duration-200"
@@ -66,7 +75,7 @@
             </li>
             
             <li>
-              <a href="contact.html">
+              <a href="./contactUs.html">
                 <h1 class="py-4 font-medium text-black  transition duration-200"
                    >Contact Us</h1>
             </a>
@@ -150,7 +159,7 @@
   </nav>
     
         <!---hero-section-->
-        <div class="text-center  py-10 2xl:py-20">
+        <div class="text-center px-3 lg:px-0 py-10 2xl:py-20">
    
             <h1 class="2xl:text-[80px] lg:text-[60px]  mx-auto 2xl:max-w-[1320px] lg:max-w-[980px]   text-4xl font-semibold 2xl:leading-[100px] leading-[75px] mb-5  ">Our Special Services</h1>
             <span class="md:text-[20px] max-w-[790px] inline-block leading-[40px]  text-lg  pt-2 mx-auto text-[#5E5E5E] lg:pb-10"> Sit amet purus gravida quis blandit. Erat velit scelerisque in dictum non consectetur a erat nam In metus vulputate eu scele risque</span>
@@ -164,7 +173,7 @@
 <div class="grid 2xl:mb-36 mb-10 lg:mb-20 lg:grid-cols-3 gap-x-16 grid-cols-1 container mx-auto">
 
 <!---1-->
-  <div class="w-[500px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(54, 171, 255, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);">
+  <div class="2xl:w-[500px] md:w-[400px] w-[350px]  relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(54, 171, 255, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);">
             
     <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <rect width="130" height="130" fill="url(#pattern0)"/>
@@ -180,7 +189,7 @@
            <div class="absolute top-6 left-0"><p class="text-xl rounded-r-full font-normal px-6 py-3 bg-[#A1D0FF]">Development</p></div> 
       </div>
       <!---2-->
-      <div class="w-[500px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style= "background: linear-gradient(180deg, rgba(239, 54, 255, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);" >
+      <div class="2xl:w-[500px] md:w-[400px] w-[350px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style= "background: linear-gradient(180deg, rgba(239, 54, 255, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);" >
             
        
 
@@ -192,7 +201,7 @@
                <div class="absolute top-6 left-0"><p class="text-xl rounded-r-full font-normal px-6 py-3 bg-[#F9C4FD]">Development</p></div> 
           </div>
           <!---3-->
-          <div class="w-[500px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(54, 255, 122, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);">
+          <div class="2xl:w-[500px] md:w-[400px] w-[350px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(54, 255, 122, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);">
             
           <img class="-mt-6" src="./src/img/product/image 21.svg" alt="">
               
@@ -200,7 +209,7 @@
                    <div class="absolute top-6 left-0"><p class="text-xl rounded-r-full font-normal px-6 py-3 bg-[#B8FFC6]">Development</p></div> 
               </div>
               <!---4-->
-              <div class="w-[500px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(129, 33, 252, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);">
+              <div class="2xl:w-[500px] md:w-[400px] w-[350px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(129, 33, 252, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);">
             
                <img class="-mt-6" src="./src/img/product/image 22.svg" alt="">
                   
@@ -208,7 +217,7 @@
                        <div class="absolute top-6 left-0"><p class="text-xl rounded-r-full font-normal px-6 py-3 bg-[#D8B9FF]">Theme Development</p></div> 
                   </div>
                   <!---5-->
-                  <div class="w-[500px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(255, 163, 54, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);">
+                  <div class="2xl:w-[500px] md:w-[400px] w-[350px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(255, 163, 54, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);">
             
                    <img class="-mt-9" src="./src/img/product/image 23.svg" alt="">
                       
@@ -216,7 +225,7 @@
                            <div class="absolute top-6 left-0"><p class="text-xl rounded-r-full font-normal px-6 py-3 bg-[#f7d2a2]">Ecommerce</p></div> 
                       </div>
                       <!---6-->
-                      <div class="w-[500px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(255, 27, 27, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%); ">
+                      <div class="2xl:w-[500px] md:w-[400px] w-[350px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(255, 27, 27, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%); ">
             
                       <img class="-mt-5" src="./src/img/product/image 24.svg" alt="">
                           
@@ -224,14 +233,14 @@
                                <div class="absolute top-6 left-0"><p class="text-xl rounded-r-full font-normal px-6 py-3 bg-[#FFB9B9]">Web Templates</p></div> 
                           </div>
                           <!---7-->
-                          <div class="w-[500px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(54, 255, 122, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);">
+                          <div class="2xl:w-[500px] md:w-[400px] w-[350px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(54, 255, 122, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);">
             
                          <img class="-mt-6" src="./src/img/product/image 25.svg" alt="">
                                 <h2 class="text-[30px] mt-5 font-semibold">HTML Templates</h2>
                                    <div class="absolute top-6 left-0"><p class="text-xl rounded-r-full font-normal px-6 py-3 bg-[#B8FFC6]">Design</p></div> 
                               </div>
                               <!----8-->
-                              <div class="w-[500px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(54, 171, 255, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);">
+                              <div class="2xl:w-[500px] md:w-[400px] w-[350px] relative mx-auto h-[358px] flex flex-col justify-center items-center" style="background: linear-gradient(180deg, rgba(54, 171, 255, 0.48) -123.05%, rgba(217, 217, 217, 0) 100%);">
             
                                 <img class="-mt-9" src="./src/img/product/image 26.svg" alt="">
                                   
@@ -243,31 +252,31 @@
 work with us-->
 <div class="bg-no-repeat bg-[length:92%] w-full h-full pb-14 bg-[center_top_2rem] " style="background-image:url('./src/img/product//Group\ 270.svg');"> 
             
-  <div class="2xl:pt-14 pt-6 bg-no-repeat bg-inherit" style="background-image:url('./src/img/product/Group\ 286.svg')">
+  <div class="2xl:pt-14 md:pt-6 bg-no-repeat bg-inherit" style="background-image:url('./src/img/product/Group\ 286.svg')">
 
     <div class="bg-no-repeat bg-[length:100%] bg-inherit relative z-[-1]" style="background: linear-gradient(263.02deg, #2421D0 -1.15%, #9D26FA 102.12%);">
    
   
     
         <!---hero-section-->
-        <div class="text-center  py-10 2xl:py-28">
+        <div class="text-center  md:py-20 2xl:py-28">
    
-            <h1 class="2xl:text-[80px] lg:text-[60px] text-white mx-auto 2xl:max-w-[981px] lg:max-w-[980px]   text-4xl font-bold 2xl:leading-[97px] leading-[75px]  ">The best companies who
+            <h1 class="2xl:text-[80px] lg:text-[60px] text-white mx-auto 2xl:max-w-[981px] lg:max-w-[980px]  text-3xl leading-[50px]  md:text-4xl font-bold 2xl:leading-[97px] md:leading-[75px]  ">The best companies who
               work with us</h1>
-              <div class="flex gap-10 2xl:gap-0 container flex-wrap mx-auto justify-between px-20 2xl:px-36 pt-10 2xl:pt-14">
+              <div class="flex gap-10 2xl:gap-0 container flex-wrap mx-auto justify-between 2xl:px-36 pt-10 2xl:pt-14">
                 <div class="">
-                    <img src="./src/img/product/Group 17.svg" alt="">
+                    <img class="2xl:w-full w-[80%] mx-auto " src="./src/img/product/Group 17.svg" alt="">
                     </div>
                 <div>
-                   <img src="./src/img/product/Group 14.svg" alt="">
+                   <img class="2xl:w-full w-[80%] " src="./src/img/product/Group 14.svg" alt="">
                     </div>
                 <div>
-                  <img src="./src/img/product/Group 14.svg" alt="">
+                  <img class="2xl:w-full w-[80%] " src="./src/img/product/Group 14.svg" alt="">
                     </div>
                 <div>
                     
     
-                 <img src="./src/img/product/Group 15.svg" alt="">
+                 <img class="2xl:w-full w-[80%] " src="./src/img/product/Group 15.svg" alt="">
                         
         
                     </div>
@@ -281,26 +290,26 @@ work with us-->
           
 </div>
  <!---Upcoming Services-->
-<div class="2xl:my-24 gap-x-28 grid grid-cols-2 mb-10 lg:mb-20 container mx-auto">
+<div class="2xl:my-24 px-3 md:pt-12 lg:px-0 gap-x-28 grid lg:grid-cols-2 mb-10 lg:mb-20 container mx-auto">
   <div class="flex items-center"> <img src="./src/img/product/Layer 2.svg" alt=""></div>
   <div>
     <h2 class="font-bold text-6xl text-black">Upcoming Services</h2>
- <div class="font-normal text-[20px] leading-[40px] py-10"> <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. lorem ipsam The point of using Lorem Ipsum is that it has a more-or-less normal </p>
-  <span class="pt-10 block">Distribution of letters, as opposed to using 'Content here, content here making it look like Readable English</span>
+ <div class="font-normal leading-[35px] text-[18px] 2xl:text-[20px] 2xl:leading-[40px] py-8 2xl:py-10"> <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. lorem ipsam The point of using Lorem Ipsum is that it has a more-or-less normal </p>
+  <span class="2xl:pt-10 pt-5 block">Distribution of letters, as opposed to using 'Content here, content here making it look like Readable English</span>
   </div>
-  <div class="flex flex-col gap-y-12 py-8">
+  <div class="flex flex-col gap-y-12 py-5 2xl:py-8">
     <div class="flex gap-4">
       <div><img src="./src/img/product/Line 14.svg" alt=""></div>
       <div class="">
         <h2 class="font-medium text-[25px] -mt-3">Project Name One</h2>
-        <p class="font-normal mt-2 text-[20px] leading-[40px] max-w-[299px]">It is a long established fact that a reader will be distracted by the readable</p>
+        <p class="font-normal mt-2 leading-[35px] text-[18px] 2xl:text-[20px] 2xl:leading-[40px] max-w-[299px]">It is a long established fact that a reader will be distracted by the readable</p>
       </div>
     </div>
     <div class="flex gap-4">
       <div><img src="./src/img/product/Line 14.svg" alt=""></div>
       <div class="">
         <h2 class="font-medium text-[25px] -mt-3">Project Name Two</h2>
-        <p class="font-normal mt-2 text-[20px] leading-[40px] max-w-[299px]">It is a long established fact that a reader will be distracted</p>
+        <p class="font-normal mt-2 leading-[35px] text-[18px] 2xl:text-[20px] 2xl:leading-[40px] max-w-[299px]">It is a long established fact that a reader will be distracted</p>
       </div>
     </div>
   </div>
@@ -312,9 +321,8 @@ work with us-->
 
 
 
-  </section>
 <!----footer-->
-<footer class="bg-no-repeat relative bg-[length:100%] w-full h-fill  bg-[center_top_0rem] " style="background-image:url('./src/img/./Rectangle\ 48.png')">
+<footer class="bg-no-repeat px-3 lg:px-0 relative bg-[length:100%] w-full h-fill  bg-[center_top_0rem] " style="background-image:url('./src/img/./Rectangle\ 48.png')">
   <!---scroll-TOP-BOTTOM-->
 <div class=" absolute w-20 2xl:w-auto 2xl:top-28 md:top-24 top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
   <a href="#" class="top sticky"> <img class=" inline-block" src="./src/img/up button.png" alt=""></a>
@@ -324,7 +332,7 @@ work with us-->
   <div>
       <img class="inline -ml-[82px] mb-6" src="./src/img/image 38.png" alt="">
       <h2 class="text-3xl font-semibold">Address</h2>
-      <p class="w-[360px] text-xl font-normal my-6 text-[#585858] leading-normal">903 Victory Business Centre, Somers 
+      <p class="md:w-[360px] text-xl font-normal my-6 text-[#585858] leading-normal">903 Victory Business Centre, Somers 
           Road North, Portsmouth</p>
        
 <svg class="inline mr-6" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -356,8 +364,8 @@ work with us-->
      <ul class="">
       <li class=""><a class="text-[#585858] font-normal block mb-5 text-xl" href="">OptinMonster</a></li>
       <li class="relative"><a class="text-[#585858] font-normal inline-block  mb-5 text-xl" href="">  WPForms</a> 
-          <span class="py-2 px-4 text-white rounded-full bottom-4 -right-6 absolute bg-[#543BF5]">Open</span> 
-          <svg class="inline-block relative -right-16 -top-6" width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span class="py-2 md:px-4 px-3 text-white rounded-full bottom-4 md:-right-6 absolute bg-[#543BF5]">Open</span> 
+          <svg class="inline-block relative md:-right-16 -top-6" width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M11.0951 10.149C11.2784 9.61273 12.055 9.61273 12.2383 10.149L13.3132 13.2966C13.5498 13.9886 13.9484 14.6172 14.4775 15.1328C15.0065 15.6485 15.6515 16.0368 16.3612 16.2671L19.5875 17.3153C20.1375 17.494 20.1375 18.2513 19.5875 18.43L16.3596 19.4781C15.65 19.7089 15.0052 20.0976 14.4765 20.6134C13.9477 21.1293 13.5494 21.7582 13.3132 22.4503L12.2383 25.5963C12.1988 25.7137 12.1223 25.816 12.0196 25.8885C11.917 25.961 11.7935 26 11.6667 26C11.54 26 11.4165 25.961 11.3138 25.8885C11.2112 25.816 11.1346 25.7137 11.0951 25.5963L10.0202 22.4487C9.78381 21.7569 9.38544 21.1283 8.85668 20.6127C8.32793 20.0971 7.68331 19.7087 6.9739 19.4781L3.74591 18.43C3.62549 18.3915 3.52062 18.3168 3.44628 18.2168C3.37193 18.1167 3.3319 17.9962 3.3319 17.8726C3.3319 17.7491 3.37193 17.6286 3.44628 17.5285C3.52062 17.4284 3.62549 17.3538 3.74591 17.3153L6.9739 16.2671C7.68331 16.0366 8.32793 15.6481 8.85668 15.1325C9.38544 14.6169 9.78381 13.9884 10.0202 13.2966L11.0951 10.149ZM4.65748 1.86307C4.68138 1.7927 4.72741 1.73146 4.78904 1.68806C4.85066 1.64466 4.92475 1.62129 5.00077 1.62129C5.0768 1.62129 5.15089 1.64466 5.21251 1.68806C5.27414 1.73146 5.32017 1.7927 5.34407 1.86307L5.989 3.75133C6.2773 4.59309 6.9539 5.25284 7.81714 5.53397L9.7536 6.16284C9.82577 6.18614 9.88857 6.23103 9.93308 6.29113C9.97759 6.35122 10.0016 6.42346 10.0016 6.49759C10.0016 6.57172 9.97759 6.64397 9.93308 6.70406C9.88857 6.76416 9.82577 6.80904 9.7536 6.83235L7.81714 7.46122C7.39139 7.59954 7.00454 7.83264 6.68722 8.14206C6.3699 8.45148 6.13085 8.82871 5.989 9.24386L5.34407 11.1321C5.32017 11.2025 5.27414 11.2637 5.21251 11.3071C5.15089 11.3505 5.0768 11.3739 5.00077 11.3739C4.92475 11.3739 4.85066 11.3505 4.78904 11.3071C4.72741 11.2637 4.68138 11.2025 4.65748 11.1321L4.01255 9.24386C3.8707 8.82871 3.63165 8.45148 3.31433 8.14206C2.99702 7.83264 2.61016 7.59954 2.18441 7.46122L0.247952 6.83235C0.175784 6.80904 0.112982 6.76416 0.0684699 6.70406C0.023958 6.64397 0 6.57172 0 6.49759C0 6.42346 0.023958 6.35122 0.0684699 6.29113C0.112982 6.23103 0.175784 6.18614 0.247952 6.16284L2.18441 5.53397C2.61016 5.39565 2.99702 5.16255 3.31433 4.85313C3.63165 4.54371 3.8707 4.16648 4.01255 3.75133L4.65748 1.86307ZM16.4379 0.158442C16.4543 0.112172 16.4852 0.0720505 16.5261 0.0436546C16.567 0.0152587 16.616 0 16.6662 0C16.7164 0 16.7654 0.0152587 16.8063 0.0436546C16.8472 0.0720505 16.878 0.112172 16.8945 0.158442L17.3245 1.4162C17.5161 1.97845 17.9677 2.41883 18.5443 2.6057L19.8342 3.02495C19.8816 3.041 19.9228 3.07106 19.9519 3.11095C19.981 3.15085 19.9967 3.19861 19.9967 3.24758C19.9967 3.29655 19.981 3.34431 19.9519 3.38421C19.9228 3.4241 19.8816 3.45416 19.8342 3.47021L18.5443 3.88946C18.2602 3.98163 18.002 4.13714 17.7902 4.34362C17.5785 4.5501 17.419 4.80188 17.3245 5.07896L16.8945 6.33672C16.878 6.38299 16.8472 6.42311 16.8063 6.45151C16.7654 6.4799 16.7164 6.49516 16.6662 6.49516C16.616 6.49516 16.567 6.4799 16.5261 6.45151C16.4852 6.42311 16.4543 6.38299 16.4379 6.33672L16.0079 5.07896C15.9134 4.80188 15.7539 4.5501 15.5422 4.34362C15.3304 4.13714 15.0722 3.98163 14.7881 3.88946L13.4999 3.47021C13.4524 3.45416 13.4113 3.4241 13.3821 3.38421C13.353 3.34431 13.3374 3.29655 13.3374 3.24758C13.3374 3.19861 13.353 3.15085 13.3821 3.11095C13.4113 3.07106 13.4524 3.041 13.4999 3.02495L14.7897 2.6057C15.3663 2.41883 15.8179 1.97845 16.0096 1.4162L16.4379 0.160067V0.158442Z" fill="#FFC000"/>
           </svg>
           </li>
