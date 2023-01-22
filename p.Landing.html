@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+   
+    <link href="./dist/output.css" rel="stylesheet">
+
+
+    <!---GOOGLE-FONT-LINK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden bg-no-repeat bg-[length:100%] bg-inherit font-inter">
+     <!----navbar-->
+ 
+     <nav class="py-6" style="background: linear-gradient(90deg, rgba(165,246,229,1) 0%, rgba(255,255,255,1) 65%);">
+      <div class="relative container mx-auto z-50">
+        <!--flex container-->
+        <div class="flex px-3 lg:px-0 items-center justify-between">
+          <!--logo-->
+          <div class="font-medium text-[25px] 2xl:text-[35px] text-black">
+            <a href="./index.html" class="flex">
+              Jompha | UCFW
+                  </a>
+         
+          </div>
+          <!--menu-itmes--->
+          <div class="">
+            <nav class="hidden xl:flex">
+         
+              <ul class="flex 2xl:space-x-12 xl:space-x-10 md:space-x-6 text-base 2xl:text-[25px] md:font-medium text-black">
+                <li class="">
+                  <a href="./aboutUs.html">
+                    <h1 class="py-4 font-medium  transition duration-200"
+                       >About Us</h1>
+                </a>
+                </li>
+                
+                <li>
+                    <a href="./blog.html" >
+                      <div class="dropdown text-center inline-block relative">
+                        <button class=" py-4 inline-flex items-center">
+                          <span class="mr-1">Blog</span>
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                        </button>
+                        <ul class="dropdown-menu absolute hidden pt-1">
+                          <li class=""><a class="bg-gray-200 relative -top-5 -left-8 hover:bg-gray-400 py-2 w-28 block whitespace-no-wrap" href="./blogDetails.html">List-1</a></li>
+                    
+                        </ul>
+                      </div>
+                    </a>
+                  
+                  </li> 
+                <li>
+                  <a href="./product.html">
+                    <h1 class="py-4 font-medium  transition duration-200"
+                        >Product</h1>
+                </a>
+                </li>
+    
+    
+                <li>
+                  <a href="./p.Landing.html">
+                    <h1 class="py-4 font-medium transition duration-200"
+                        >P.Landing</h1>
+                </a>
+                </li>
+                
+                <li>
+                  <a href="./contactUs.html">
+                    <h1 class="py-4 font-medium text-black  transition duration-200"
+                       >Contact Us</h1>
+                </a>
+                </li>
+              </ul>
+          </nav>
+           
+          </div>
+         
+           <!--sign-in-button--->
+      
+           <div class="hidden xl:flex ">
+            <a href="" class="flex font-medium text-base 2xl:text-[25px] cursor-pointer rounded-full items-center gap-4 bg-[#48A400] 2xl:px-8 2xl:py-5 px-6 py-3 md:mr-4">
+                <svg class="inline" width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 23C2 23 0 23 0 21.0833C0 19.1667 2 13.4167 10 13.4167C18 13.4167 20 19.1667 20 21.0833C20 23 18 23 18 23H2ZM10 11.5C11.5913 11.5 13.1174 10.8942 14.2426 9.81586C15.3679 8.73753 16 7.27499 16 5.75C16 4.22501 15.3679 2.76247 14.2426 1.68414C13.1174 0.605802 11.5913 0 10 0C8.4087 0 6.88258 0.605802 5.75736 1.68414C4.63214 2.76247 4 4.22501 4 5.75C4 7.27499 4.63214 8.73753 5.75736 9.81586C6.88258 10.8942 8.4087 11.5 10 11.5Z" fill="white"/>
+                </svg> <span class="2xl:text-2xl text-white">Sign In</span> </a>
+    <!--Try-For-Free--->
+      
+    <div class="hidden xl:flex">
+      <a href="" class="flex cursor-pointer font-medium text-base 2xl:text-[25px] rounded-full items-center gap-4 bg-[#DA0083] 2xl:px-8 2xl:py-5 px-6 py-3">
+         <span class="2xl:text-2xl text-white">Try For Free</span> </a>
+    
+     </div>
+           </div>
+            
+          
+           <!--humburger icon--->
+           <button id="menu-btn" class="transition-all duration-500 block humburger relative cursor-pointer w-6 h-6 xl:hidden focus:outline-none">
+             <span class="humburger-top bg-black absolute w-6 top-1 h-0.5 left-0 rotate-0 transition-all duration-500 "></span>
+             <span class="humburger-middle translate-y-[7px] bg-black absolute w-6 left-0 h-0.5 top-1 rotate-0 transition-all duration-500 "></span>
+             <span class="humburger-bottom translate-y-[14px] bg-black absolute w-6 left-0 h-0.5 top-1 rotate-0 transition-all duration-500 "></span>
+           </button>
+        </div>
+        <!--mobile menu-->
+        <div class="xl:hidden">
+         <div id="menu" class="absolute rounded-xl z-50 hidden flex-col items-center self-end justify-center py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+           
+          <!--menu-itmes--->
+        
+          <ul class="flex flex-col justify-center items-center 2xl:text-[25px] md:font-medium text-black">
+            <li class="">
+              <a href="index.html">
+                <h1 class="py-4 font-medium transition duration-200"
+                   >Products</h1>
+            </a>
+            </li>
+            
+            <li>
+              <a href="services.html">
+                <h1 class="py-4 font-medium transition duration-200"
+                    >Blog</h1>
+            </a>
+            </li>
+              <li>
+                <a href="portfolio.html" >
+                  <h1 class="py-4 font-medium transition duration-200"
+                      >About</h1>
+              </a>
+              </li>
+            <li>
+              <a href="about.html" >
+                <h1 class="py-4 font-medium text-black  transition duration-200"
+                    >Docs</h1>
+            </a>
+            </li>
+            <li>
+              <a href="blog.html" >
+                <h1 class="py-4 font-medium text-black  transition duration-200"
+                >Contact Us</h1>
+              </a>
+            </li>
+             
+          </ul>
+        
+        <!--button--->
+        <div class="block xl:hidden">
+          <div class="flex">
+                     
+            <a href="" class="flex rounded-xl items-center gap-4 bg-primary-btn 2xl:px-10 px-6 py-4 ">
+                <svg class="inline" width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 23C2 23 0 23 0 21.0833C0 19.1667 2 13.4167 10 13.4167C18 13.4167 20 19.1667 20 21.0833C20 23 18 23 18 23H2ZM10 11.5C11.5913 11.5 13.1174 10.8942 14.2426 9.81586C15.3679 8.73753 16 7.27499 16 5.75C16 4.22501 15.3679 2.76247 14.2426 1.68414C13.1174 0.605802 11.5913 0 10 0C8.4087 0 6.88258 0.605802 5.75736 1.68414C4.63214 2.76247 4 4.22501 4 5.75C4 7.27499 4.63214 8.73753 5.75736 9.81586C6.88258 10.8942 8.4087 11.5 10 11.5Z" fill="white"/>
+                </svg> <span class="2xl:text-[25px] text-white">Login Here</span> </a>
+          </div>
+       </div>
+         </div>
+        </div>
+      </div>
+        
+      </nav>
+   <header class=" 2xl:mb-32 mb-10 lg:mb-16">
+
+    <div class="bg-no-repeat bg-[length:100%] bg-inherit" >
+   
+   
+    
+        <!---hero-section-->
+        <div class="text-center px-3 lg:px-0 py-10 2xl:py-20">
+   
+            <h2 class="2xl:text-[35px] rounded-full text-[#48A400]  p-3 max-w-[760px] mx-auto bg-[#ECFFDD] text-[25px] font-medium mb-5  ">
+              Ultimate Coupons For Woocommerce</h2>
+              <h1 class="xl:text-[80px] max-w-[1350px] mx-auto text-2xl md:text-4xl font-semibold xl:leading-[100px] ">The #1  <span class="relative">Plugins, <img class="inline absolute left-0 bottom-4 -z-[1]" src="./src/img/heroLine.svg" alt=""></span>
+                For Woocommerce Coupon Solution</h1>
+                </div> 
+
+                <!-----video-section---->
+                <section class="container mx-auto relative">
+                  <img class="mx-auto " src="./src/img/productLanding/Mask group.jpg" alt="">
+                  <div class="vpop absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer bg-white rounded-full h-[65px] w-[65px] flex justify-center items-center" data-type="youtube" data-id="6xcG6ttMDVY" data-autoplay='true'>
+  
+                        
+                    <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 7.26795C15.3333 8.03775 15.3333 9.96225 14 10.7321L3.5 16.7942C2.16667 17.564 0.500001 16.6018 0.500001 15.0622L0.500002 2.93782C0.500002 1.39822 2.16667 0.435971 3.5 1.20577L14 7.26795Z" fill="#DA0083"/>
+                        </svg>
+                        
+                     </div>
+                                                               
+                    <!---end-video-play-btn-->
+                                          
+                     <!-- copy this stuff and down -->
+                       <div id="video-popup-overlay" class="hidden fixed z-[995] top-0 bg-black opacity-[0.8] left-0 w-full h-full"></div>
+                                          
+                       <div id="video-popup-container" class="hidden fixed z-[999] w-[60%] left-1/2 -ml-[30%] top-[20%] bg-white">
+                       <div id="video-popup-close" class="fade cursor-pointer absolute right-[10px] -top-[10px] z-[999] w-6 h-6 rounded-[25px] text-center text-xs bg-black leading-6 text-white">&#10006;</div>
+                        <div id="video-popup-iframe-container" class="absolute z-[997] w-full pb-[56.25%] border border-solid border-black rounded-sm bg-black">
+                        <iframe id="video-popup-iframe" class="z-[999] absolute w-full h-full left-0 top-0 bg-black" src="" width="100%" height="100%" frameborder="0"></iframe>
+                         </div>
+                         </div>  
+   
+                </section>
+
+               
+               
+    </div>
+   
+   </header>
+
+ <!----product-section-->
+ <div class="text-center container mx-auto ">
+  <h1 class="font-semibold max-w-[927px] 2xl:leading-[109px] leading-[85px]  mx-auto text-4xl lg:text-[60px] 2xl:text-[80px] 2xl:pb-20 pb-8">Our Hightailed Product Features</h1>
+  <div class="grid 2xl:mb-36 mb-10 lg:mb-20 lg:grid-cols-3 2xl:gap-8 gap-6 grid-cols-1 container mx-auto">
+
+    <!---1-->
+    <div class=" rounded-lg relative mx-auto w-full py-8 2xl:py-16" style="background: linear-gradient(180deg, #F7F2FF 0%, rgba(247, 242, 255, 0) 100%);">
+                
+      <div class="relative">
+        <svg class="2xl:max-w-[168px] max-w-[135px] mx-auto" class="mx-auto" width="168" height="148" viewBox="0 0 168 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z" fill="#EDE4FF"/>
+        </svg>
+        <img class="absolute max-w-[55px] 2xl:max-w-[75px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./src/img/productLanding/Group 113.svg" alt="">
+      </div>                  
+    
+    
+      <h2 class="2xl:text-[35px] text-[25px] font-medium">Buy X Get X Offers</h2>
+                      <p class="2xl:max-w-[365px] max-w-[285px]  text-[18px] 2xl:text-[20px] font-normal mx-auto">Provide a more personal touch to your customer in seconds with video messaging</p>        
+                          
+      </div>
+          <!---2-->
+          <div class="rounded-lg relative mx-auto w-full py-8 2xl:py-16" style="background: linear-gradient(360deg, #FFEFF7 0%, rgba(255, 239, 247, 0) 100%);">
+                
+            <div class="relative">
+              
+<svg class="2xl:max-w-[168px] max-w-[135px] mx-auto" width="168" height="148" viewBox="0 0 168 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z" fill="#FFE4F1"/>
+</svg>
+
+              <img class="absolute max-w-[55px] 2xl:max-w-[75px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./src/img/productLanding/Group.svg" alt="">
+            </div>                  
+          
+          
+            <h2 class="2xl:text-[35px] text-[25px] font-medium">Conditions</h2>
+                            <p class="2xl:max-w-[365px] max-w-[285px]  text-[18px] 2xl:text-[20px] font-normal mx-auto">Provide a more personal touch to your customer in seconds with video messaging</p>        
+                                
+            </div>
+              <!---3-->
+              <div class="rounded-lg relative mx-auto w-full py-8 2xl:py-16" style="background: linear-gradient(180deg, #E9EFFF 0%, rgba(233, 239, 255, 0) 100%);">
+                
+                <div class="relative">
+
+<svg class="2xl:max-w-[168px] max-w-[135px] mx-auto" width="168" height="148" viewBox="0 0 168 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z" fill="#DDEAFF"/>
+</svg>
+
+                  <img class="absolute max-w-[55px] 2xl:max-w-[75px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./src/img/productLanding/Group-2.svg" alt="">
+                </div>                  
+              
+              
+                <h2 class="2xl:text-[35px] text-[25px] font-medium">Buy X Get X Offers</h2>
+                                <p class="2xl:max-w-[365px] max-w-[285px]  text-[18px] 2xl:text-[20px] font-normal mx-auto">Provide a more personal touch to your customer in seconds with video messaging</p>        
+                                    
+                </div>
+                  <!---4-->
+                  <div class="rounded-lg relative mx-auto w-full py-8 2xl:py-16" style="background: linear-gradient(360deg, #DFF9FF 0%, rgba(223, 249, 255, 0) 100%);">
+                
+                    <div class="relative">
+
+<svg class="2xl:max-w-[168px] max-w-[135px] mx-auto" width="168" height="148" viewBox="0 0 168 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z" fill="#CAF2FF"/>
+</svg>
+
+                      <img class="absolute max-w-[55px] 2xl:max-w-[75px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./src/img/productLanding/Group-1.svg" alt="">
+                    </div>                  
+                  
+                  
+                    <h2 class="2xl:text-[35px] text-[25px] font-medium">Buy X Get X Offers</h2>
+                                    <p class="2xl:max-w-[365px] max-w-[285px]  text-[18px] 2xl:text-[20px] font-normal mx-auto">Provide a more personal touch to your customer in seconds with video messaging</p>        
+                                        
+                    </div>
+                      <!---5-->
+                      <div class="rounded-lg relative mx-auto w-full py-8 2xl:py-16" style="background: linear-gradient(180deg, #D1FEFE 0%, rgba(209, 254, 254, 0) 100%);">
+                
+                        <div class="relative">
+
+<svg class="2xl:max-w-[168px] max-w-[135px] mx-auto" width="168" height="148" viewBox="0 0 168 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z" fill="#9AFFFE"/>
+</svg>
+                          <img class="absolute max-w-[55px] 2xl:max-w-[75px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./src/img/productLanding/Group-3.svg" alt="">
+                        </div>                  
+                      
+                      
+                        <h2 class="2xl:text-[35px] text-[25px] font-medium">Buy X Get X Offers</h2>
+                                        <p class="2xl:max-w-[365px] max-w-[285px]  text-[18px] 2xl:text-[20px] font-normal mx-auto">Provide a more personal touch to your customer in seconds with video messaging</p>        
+                                            
+                        </div>
+                          <!---6-->
+                          <div class="rounded-lg relative mx-auto w-full py-8 2xl:py-16" style="background: linear-gradient(360deg, #DEFFE4 0%, rgba(222, 255, 228, 0) 100%);">
+                
+                            <div class="relative">
+
+<svg class="2xl:max-w-[168px] max-w-[135px] mx-auto" width="168" height="148" viewBox="0 0 168 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z" fill="#B8FFC3"/>
+</svg>
+
+                              <img class="absolute max-w-[55px] 2xl:max-w-[75px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./src/img/productLanding/Group 115.svg" alt="">
+                            </div>                  
+                          
+                          
+                            <h2 class="2xl:text-[35px] text-[25px] font-medium">Buy X Get X Offers</h2>
+                                            <p class="2xl:max-w-[365px] max-w-[285px]  text-[18px] 2xl:text-[20px] font-normal mx-auto">Provide a more personal touch to your customer in seconds with video messaging</p>        
+                                                
+                            </div>
+                              <!---7-->
+                              <div class="rounded-lg relative mx-auto w-full py-8 2xl:py-16" style="background: linear-gradient(180deg, #F3E8FE 0%, rgba(243, 232, 254, 0) 100%);">
+                
+                                <div class="relative">
+
+<svg  class="2xl:max-w-[168px] max-w-[135px] mx-auto" width="168" height="148" viewBox="0 0 168 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z" fill="#F3C7FF"/>
+</svg>
+
+                                 
+                                  <img class="absolute max-w-[55px] 2xl:max-w-[75px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./src/img/productLanding/Group-5.svg" alt="">
+                                </div>                  
+                              
+                              
+                                <h2 class="2xl:text-[35px] text-[25px] font-medium">Buy X Get X Offers</h2>
+                                                <p class="2xl:max-w-[365px] max-w-[285px]  text-[18px] 2xl:text-[20px] font-normal mx-auto">Provide a more personal touch to your customer in seconds with video messaging</p>        
+                                                    
+                                </div>
+                                  <!----8-->
+                                  <div class="rounded-lg relative mx-auto w-full py-8 2xl:py-16" style="background: linear-gradient(360deg, #FFF1DF 0%, rgba(255, 241, 223, 0) 100%);">
+                
+                                    <div class="relative">
+
+<svg class="2xl:max-w-[168px] max-w-[135px] mx-auto" width="168" height="148" viewBox="0 0 168 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M122.829 128.184C89.3342 158.252 57.0111 150.67 26.9432 117.175C-3.1247 83.6799 -11.8692 45.5127 21.626 15.4448C55.1212 -14.6231 124.302 5.57464 154.37 39.0698C184.438 72.565 156.325 98.116 122.829 128.184Z" fill="#FFDFBA"/>
+</svg>
+
+                                     
+                                      <img class="absolute max-w-[55px] 2xl:max-w-[75px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./src/img/productLanding/Group-4.svg" alt="">
+                                    </div>                  
+                                  
+                                  
+                                    <h2 class="2xl:text-[35px] text-[25px] font-medium">Buy X Get X Offers</h2>
+                                                    <p class="2xl:max-w-[365px] max-w-[285px]  text-[18px] 2xl:text-[20px] font-normal mx-auto">Provide a more personal touch to your customer in seconds with video messaging</p>        
+                                                        
+                                    </div>
+    </div>
+</div>
+
+
+ <!---Describe our Features-->
+ <article class="grid container mx-auto grid-cols-[630px_minmax(900px,_1fr)_100px] gap-8">
+  <div class="flex flex-col gap-y-8 ">
+    <div class="one">
+      <p class="text-[80px] font-semibold">Describe our Features</p>
+    </div>
+    
+    <div  class="two bg-[#F5F2FF] py-14 px-12">
+      <img class="mb-[15px]" src="./src/img/productLanding/Group 113.svg" alt="">
+      <h2 class="text-[60px] leading-[77px] lg:py-7 font-semibold">Buy X Get X <br> Offers</h2>
+      <p class="font-normal text-xl leading-[33px] lg:max-w-[511px]">Provide a more personal touch to your customer in seconds with video messaging Provide a more personal touch to your customer in seconds with video messaging</p>
+      <div class="mt-[15px] leading-[33px] text-[20px] text-[#5E5E5E]">
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]">Restrict User Roles.</span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]"> Curious what to say? How to say it?</span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]"> Whether you’re kicking off a new campaign.</span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]">Habitasse per feugiat aliquam luctus accumsan curae </span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]">Email is a crucial channel in any marketing.</span>
+        </div>
+        
+      
+        
+        
+      </div>
+      <button class="text-xl text-[#48A400] hover:bg-[#48A400] border-solid border-[#48A400] hover:text-white  mt-[15px] border  font-normal cursor-pointer py-3 rounded-full px-6"><a class="" href=""> See More 
+        <svg class="inline-block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 16.875C6.91142 16.875 4.90838 16.0453 3.43153 14.5685C1.95468 13.0916 1.125 11.0886 1.125 9C1.125 6.91142 1.95468 4.90838 3.43153 3.43153C4.90838 1.95468 6.91142 1.125 9 1.125C11.0886 1.125 13.0916 1.95468 14.5685 3.43153C16.0453 4.90838 16.875 6.91142 16.875 9C16.875 11.0886 16.0453 13.0916 14.5685 14.5685C13.0916 16.0453 11.0886 16.875 9 16.875ZM9 18C11.3869 18 13.6761 17.0518 15.364 15.364C17.0518 13.6761 18 11.3869 18 9C18 6.61305 17.0518 4.32387 15.364 2.63604C13.6761 0.948212 11.3869 0 9 0C6.61305 0 4.32387 0.948212 2.63604 2.63604C0.948212 4.32387 0 6.61305 0 9C0 11.3869 0.948212 13.6761 2.63604 15.364C4.32387 17.0518 6.61305 18 9 18Z" fill="#48A400"/>
+        <path d="M7.05488 5.68692C7.14688 5.63954 7.25018 5.61847 7.35339 5.62601C7.4566 5.63355 7.55573 5.66942 7.63988 5.72967L11.5774 8.54217C11.6503 8.5942 11.7097 8.6629 11.7507 8.74254C11.7917 8.82218 11.8131 8.91047 11.8131 9.00005C11.8131 9.08962 11.7917 9.17791 11.7507 9.25755C11.7097 9.33719 11.6503 9.40589 11.5774 9.45792L7.63988 12.2704C7.55576 12.3306 7.45668 12.3665 7.35352 12.374C7.25036 12.3815 7.14712 12.3605 7.05514 12.3132C6.96317 12.2659 6.88602 12.1941 6.83219 12.1058C6.77835 12.0174 6.74992 11.916 6.75 11.8125V6.18755C6.74989 6.08414 6.77829 5.9827 6.83208 5.89438C6.88586 5.80606 6.96295 5.73428 7.05488 5.68692Z" fill="#48A400"/>
+        </svg>
+        </a></button>
+    </div>
+    
+    <div  class="three bg-[#ECFBFF] py-14 px-12">
+      <img class="mb-[15px]" src="./src/img/productLanding/Group-1.svg" alt="">
+      <h2 class="text-[60px] leading-[77px] lg:py-7  font-semibold">Referral System</h2>
+      <p class="font-normal text-xl leading-[33px] lg:max-w-[511px]">Provide a more personal touch to your customer in seconds with video messaging Provide a more personal touch to your customer in seconds with video messaging</p>
+      <div class="mt-[15px] leading-[33px] text-[20px] text-[#5E5E5E]">
+       
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]"> Selected user roles that are available in WordPress. </span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]"> Allow or Disallow User.</span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]">Multiple payment methods. </span>
+        </div>
+        
+        
+      
+        
+        
+      </div>
+      <button class="text-xl text-[#DA0083] mt-[15px] border border-solid border-[#DA0083] font-normal cursor-pointer py-3 rounded-full px-6 "><a href=""> See More 
+        <svg class="inline-block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 16.875C6.91142 16.875 4.90838 16.0453 3.43153 14.5685C1.95468 13.0916 1.125 11.0886 1.125 9C1.125 6.91142 1.95468 4.90838 3.43153 3.43153C4.90838 1.95468 6.91142 1.125 9 1.125C11.0886 1.125 13.0916 1.95468 14.5685 3.43153C16.0453 4.90838 16.875 6.91142 16.875 9C16.875 11.0886 16.0453 13.0916 14.5685 14.5685C13.0916 16.0453 11.0886 16.875 9 16.875ZM9 18C11.3869 18 13.6761 17.0518 15.364 15.364C17.0518 13.6761 18 11.3869 18 9C18 6.61305 17.0518 4.32387 15.364 2.63604C13.6761 0.948212 11.3869 0 9 0C6.61305 0 4.32387 0.948212 2.63604 2.63604C0.948212 4.32387 0 6.61305 0 9C0 11.3869 0.948212 13.6761 2.63604 15.364C4.32387 17.0518 6.61305 18 9 18Z" fill="#DA0083"/>
+        <path d="M7.05488 5.68692C7.14688 5.63954 7.25018 5.61847 7.35339 5.62601C7.4566 5.63355 7.55573 5.66942 7.63988 5.72967L11.5774 8.54217C11.6503 8.5942 11.7097 8.6629 11.7507 8.74254C11.7917 8.82218 11.8131 8.91047 11.8131 9.00005C11.8131 9.08962 11.7917 9.17791 11.7507 9.25755C11.7097 9.33719 11.6503 9.40589 11.5774 9.45792L7.63988 12.2704C7.55576 12.3306 7.45668 12.3665 7.35352 12.374C7.25036 12.3815 7.14712 12.3605 7.05514 12.3132C6.96317 12.2659 6.88602 12.1941 6.83219 12.1058C6.77835 12.0174 6.74992 11.916 6.75 11.8125V6.18755C6.74989 6.08414 6.77829 5.9827 6.83208 5.89438C6.88586 5.80606 6.96295 5.73428 7.05488 5.68692Z" fill="#DA0083"/>
+        </svg>
+        </a></button>
+    </div>
+    
+    <div  class="three bg-[#EFFFF2] py-14 px-12">
+      <img class="mb-[15px]" src="./src/img/productLanding/Group 115.svg" alt="">
+      <h2 class="text-[60px] leading-[77px] lg:py-7  font-semibold">Play To Win <br> Coupon</h2>
+      <p class="font-normal text-xl leading-[33px]  lg:max-w-[511px]">Provide a more personal touch to your customer in seconds with video messaging Provide.</p>
+     
+      <button class="text-xl text-[#48A400] hover:bg-[#48A400] border-solid border-[#48A400] hover:text-white  mt-[15px] border  font-normal cursor-pointer py-3 rounded-full px-6"><a class="" href=""> See More 
+        <svg class="inline-block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 16.875C6.91142 16.875 4.90838 16.0453 3.43153 14.5685C1.95468 13.0916 1.125 11.0886 1.125 9C1.125 6.91142 1.95468 4.90838 3.43153 3.43153C4.90838 1.95468 6.91142 1.125 9 1.125C11.0886 1.125 13.0916 1.95468 14.5685 3.43153C16.0453 4.90838 16.875 6.91142 16.875 9C16.875 11.0886 16.0453 13.0916 14.5685 14.5685C13.0916 16.0453 11.0886 16.875 9 16.875ZM9 18C11.3869 18 13.6761 17.0518 15.364 15.364C17.0518 13.6761 18 11.3869 18 9C18 6.61305 17.0518 4.32387 15.364 2.63604C13.6761 0.948212 11.3869 0 9 0C6.61305 0 4.32387 0.948212 2.63604 2.63604C0.948212 4.32387 0 6.61305 0 9C0 11.3869 0.948212 13.6761 2.63604 15.364C4.32387 17.0518 6.61305 18 9 18Z" fill="#48A400"/>
+        <path d="M7.05488 5.68692C7.14688 5.63954 7.25018 5.61847 7.35339 5.62601C7.4566 5.63355 7.55573 5.66942 7.63988 5.72967L11.5774 8.54217C11.6503 8.5942 11.7097 8.6629 11.7507 8.74254C11.7917 8.82218 11.8131 8.91047 11.8131 9.00005C11.8131 9.08962 11.7917 9.17791 11.7507 9.25755C11.7097 9.33719 11.6503 9.40589 11.5774 9.45792L7.63988 12.2704C7.55576 12.3306 7.45668 12.3665 7.35352 12.374C7.25036 12.3815 7.14712 12.3605 7.05514 12.3132C6.96317 12.2659 6.88602 12.1941 6.83219 12.1058C6.77835 12.0174 6.74992 11.916 6.75 11.8125V6.18755C6.74989 6.08414 6.77829 5.9827 6.83208 5.89438C6.88586 5.80606 6.96295 5.73428 7.05488 5.68692Z" fill="#48A400"/>
+        </svg>
+        </a></button>
+    </div>
+  
+    <div class="five bg-[#FFF3F0] py-14 px-12">
+      <img class="mb-[15px]" src="./src/img/productLanding/Group-4.svg" alt="">
+      <h2 class="text-[60px] leading-[77px] lg:py-7 font-semibold">Play To Win <br> Coupon</h2>
+      <p class="font-normal text-xl leading-[33px] lg:max-w-[511px]">Provide a more personal touch to your customer in seconds with video messaging Provide a more personal touch to your customer in seconds with video messaging</p>
+     
+      <button class="text-xl text-[#DA0083] hover:bg-[#DA0083] border-solid border-[#DA0083] hover:text-white  mt-[15px] border  font-normal cursor-pointer py-3 rounded-full px-6"><a class="" href=""> See More 
+        <svg class="inline-block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 16.875C6.91142 16.875 4.90838 16.0453 3.43153 14.5685C1.95468 13.0916 1.125 11.0886 1.125 9C1.125 6.91142 1.95468 4.90838 3.43153 3.43153C4.90838 1.95468 6.91142 1.125 9 1.125C11.0886 1.125 13.0916 1.95468 14.5685 3.43153C16.0453 4.90838 16.875 6.91142 16.875 9C16.875 11.0886 16.0453 13.0916 14.5685 14.5685C13.0916 16.0453 11.0886 16.875 9 16.875ZM9 18C11.3869 18 13.6761 17.0518 15.364 15.364C17.0518 13.6761 18 11.3869 18 9C18 6.61305 17.0518 4.32387 15.364 2.63604C13.6761 0.948212 11.3869 0 9 0C6.61305 0 4.32387 0.948212 2.63604 2.63604C0.948212 4.32387 0 6.61305 0 9C0 11.3869 0.948212 13.6761 2.63604 15.364C4.32387 17.0518 6.61305 18 9 18Z" fill="#DA0083"/>
+        <path d="M7.05488 5.68692C7.14688 5.63954 7.25018 5.61847 7.35339 5.62601C7.4566 5.63355 7.55573 5.66942 7.63988 5.72967L11.5774 8.54217C11.6503 8.5942 11.7097 8.6629 11.7507 8.74254C11.7917 8.82218 11.8131 8.91047 11.8131 9.00005C11.8131 9.08962 11.7917 9.17791 11.7507 9.25755C11.7097 9.33719 11.6503 9.40589 11.5774 9.45792L7.63988 12.2704C7.55576 12.3306 7.45668 12.3665 7.35352 12.374C7.25036 12.3815 7.14712 12.3605 7.05514 12.3132C6.96317 12.2659 6.88602 12.1941 6.83219 12.1058C6.77835 12.0174 6.74992 11.916 6.75 11.8125V6.18755C6.74989 6.08414 6.77829 5.9827 6.83208 5.89438C6.88586 5.80606 6.96295 5.73428 7.05488 5.68692Z" fill="#DA0083"/>
+        </svg>
+        </a></button>
+    </div>
+  </div>
+   
+  <div class="flex flex-col gap-y-8 ">
+  
+    <div  class="six lg:w-[620px] 2xl:max-w-[635px] bg-[#FFF3F8] py-14 px-12">
+      <img class="mb-[15px]" src="./src/img/productLanding/Group.svg" alt="">
+      <h2 class="text-[60px] leading-[77px] lg:py-7 font-semibold">Conditions</h2>
+      <p class="font-normal text-xl leading-[33px] lg:max-w-[511px]">Provide a more personal touch to your customer in seconds with video messaging Provide a more personal touch to your customer in seconds with video messaging</p>
+      <div class="mt-[15px] leading-[33px] text-[20px] text-[#5E5E5E]">
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]">Selected user roles that are available in WordPress.</span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]"> Allow or Disallow User.</span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]"> Multiple payment methods.</span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]">Multiple shipping methods. </span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]"> Disable the settings if you don’t want to use it.</span>
+        </div>
+        
+      
+        
+        
+      </div>
+      <button class="text-xl text-[#DA0083] hover:bg-[#DA0083] border-solid border-[#DA0083] hover:text-white  mt-[15px] border  font-normal cursor-pointer py-3 rounded-full px-6"><a class="" href=""> See More 
+        <svg class="inline-block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 16.875C6.91142 16.875 4.90838 16.0453 3.43153 14.5685C1.95468 13.0916 1.125 11.0886 1.125 9C1.125 6.91142 1.95468 4.90838 3.43153 3.43153C4.90838 1.95468 6.91142 1.125 9 1.125C11.0886 1.125 13.0916 1.95468 14.5685 3.43153C16.0453 4.90838 16.875 6.91142 16.875 9C16.875 11.0886 16.0453 13.0916 14.5685 14.5685C13.0916 16.0453 11.0886 16.875 9 16.875ZM9 18C11.3869 18 13.6761 17.0518 15.364 15.364C17.0518 13.6761 18 11.3869 18 9C18 6.61305 17.0518 4.32387 15.364 2.63604C13.6761 0.948212 11.3869 0 9 0C6.61305 0 4.32387 0.948212 2.63604 2.63604C0.948212 4.32387 0 6.61305 0 9C0 11.3869 0.948212 13.6761 2.63604 15.364C4.32387 17.0518 6.61305 18 9 18Z" fill="#DA0083"/>
+        <path d="M7.05488 5.68692C7.14688 5.63954 7.25018 5.61847 7.35339 5.62601C7.4566 5.63355 7.55573 5.66942 7.63988 5.72967L11.5774 8.54217C11.6503 8.5942 11.7097 8.6629 11.7507 8.74254C11.7917 8.82218 11.8131 8.91047 11.8131 9.00005C11.8131 9.08962 11.7917 9.17791 11.7507 9.25755C11.7097 9.33719 11.6503 9.40589 11.5774 9.45792L7.63988 12.2704C7.55576 12.3306 7.45668 12.3665 7.35352 12.374C7.25036 12.3815 7.14712 12.3605 7.05514 12.3132C6.96317 12.2659 6.88602 12.1941 6.83219 12.1058C6.77835 12.0174 6.74992 11.916 6.75 11.8125V6.18755C6.74989 6.08414 6.77829 5.9827 6.83208 5.89438C6.88586 5.80606 6.96295 5.73428 7.05488 5.68692Z" fill="#DA0083"/>
+        </svg>
+        </a></button>
+    </div>
+    
+    <div  class="seven lg:w-[620px] 2xl:w-full bg-[#F1F6FF] py-14 px-12">
+      <img class="mb-[15px]" src="./src/img/productLanding/Group-2.svg" alt="">
+      <h2 class="text-[60px] leading-[77px] lg:py-7 font-semibold">Restrictions</h2>
+      <p class="font-normal text-xl leading-[33px] lg:max-w-[511px] 2xl:max-w-[729px]">Provide a more personal touch to your customer in seconds with video messaging Provide a more personal touch to your customer in seconds with video messaging</p>
+      <div class="mt-[15px] leading-[33px] text-[20px] text-[#5E5E5E]">
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]">Selected user roles that are available in WordPress.</span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]"> Allow or Disallow User.</span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]"> Multiple payment methods.</span>
+        </div>
+      </div>
+      <button class="text-xl text-[#48A400] hover:bg-[#48A400] border-solid border-[#48A400] hover:text-white  mt-[15px] border  font-normal cursor-pointer py-3 rounded-full px-6"><a class="" href=""> See More 
+        <svg class="inline-block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 16.875C6.91142 16.875 4.90838 16.0453 3.43153 14.5685C1.95468 13.0916 1.125 11.0886 1.125 9C1.125 6.91142 1.95468 4.90838 3.43153 3.43153C4.90838 1.95468 6.91142 1.125 9 1.125C11.0886 1.125 13.0916 1.95468 14.5685 3.43153C16.0453 4.90838 16.875 6.91142 16.875 9C16.875 11.0886 16.0453 13.0916 14.5685 14.5685C13.0916 16.0453 11.0886 16.875 9 16.875ZM9 18C11.3869 18 13.6761 17.0518 15.364 15.364C17.0518 13.6761 18 11.3869 18 9C18 6.61305 17.0518 4.32387 15.364 2.63604C13.6761 0.948212 11.3869 0 9 0C6.61305 0 4.32387 0.948212 2.63604 2.63604C0.948212 4.32387 0 6.61305 0 9C0 11.3869 0.948212 13.6761 2.63604 15.364C4.32387 17.0518 6.61305 18 9 18Z" fill="#48A400"/>
+        <path d="M7.05488 5.68692C7.14688 5.63954 7.25018 5.61847 7.35339 5.62601C7.4566 5.63355 7.55573 5.66942 7.63988 5.72967L11.5774 8.54217C11.6503 8.5942 11.7097 8.6629 11.7507 8.74254C11.7917 8.82218 11.8131 8.91047 11.8131 9.00005C11.8131 9.08962 11.7917 9.17791 11.7507 9.25755C11.7097 9.33719 11.6503 9.40589 11.5774 9.45792L7.63988 12.2704C7.55576 12.3306 7.45668 12.3665 7.35352 12.374C7.25036 12.3815 7.14712 12.3605 7.05514 12.3132C6.96317 12.2659 6.88602 12.1941 6.83219 12.1058C6.77835 12.0174 6.74992 11.916 6.75 11.8125V6.18755C6.74989 6.08414 6.77829 5.9827 6.83208 5.89438C6.88586 5.80606 6.96295 5.73428 7.05488 5.68692Z" fill="#48A400"/>
+        </svg>
+        </a></button>
+    </div>
+    
+    <div  class="eight lg:w-[620px] 2xl:max-w-[635px] bg-[#EDFFFF] py-14 px-12">
+      <img class="mb-[15px]" src="./src/img/productLanding/Group-3.svg" alt="">
+      <h2 class="text-[60px] leading-[77px] lg:py-7 font-semibold">Coupon <br> Templates</h2>
+      <p class="font-normal text-xl leading-[33px] lg:max-w-[511px]">Provide a more personal touch to your customer in seconds with video messaging Provide a more personal touch to your customer in seconds with video messaging</p>
+     
+      <button class="text-xl text-[#DA0083] hover:bg-[#DA0083] border-solid border-[#DA0083] hover:text-white  mt-[15px] border  font-normal cursor-pointer py-3 rounded-full px-6"><a class="" href=""> See More 
+        <svg class="inline-block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 16.875C6.91142 16.875 4.90838 16.0453 3.43153 14.5685C1.95468 13.0916 1.125 11.0886 1.125 9C1.125 6.91142 1.95468 4.90838 3.43153 3.43153C4.90838 1.95468 6.91142 1.125 9 1.125C11.0886 1.125 13.0916 1.95468 14.5685 3.43153C16.0453 4.90838 16.875 6.91142 16.875 9C16.875 11.0886 16.0453 13.0916 14.5685 14.5685C13.0916 16.0453 11.0886 16.875 9 16.875ZM9 18C11.3869 18 13.6761 17.0518 15.364 15.364C17.0518 13.6761 18 11.3869 18 9C18 6.61305 17.0518 4.32387 15.364 2.63604C13.6761 0.948212 11.3869 0 9 0C6.61305 0 4.32387 0.948212 2.63604 2.63604C0.948212 4.32387 0 6.61305 0 9C0 11.3869 0.948212 13.6761 2.63604 15.364C4.32387 17.0518 6.61305 18 9 18Z" fill="#DA0083"/>
+        <path d="M7.05488 5.68692C7.14688 5.63954 7.25018 5.61847 7.35339 5.62601C7.4566 5.63355 7.55573 5.66942 7.63988 5.72967L11.5774 8.54217C11.6503 8.5942 11.7097 8.6629 11.7507 8.74254C11.7917 8.82218 11.8131 8.91047 11.8131 9.00005C11.8131 9.08962 11.7917 9.17791 11.7507 9.25755C11.7097 9.33719 11.6503 9.40589 11.5774 9.45792L7.63988 12.2704C7.55576 12.3306 7.45668 12.3665 7.35352 12.374C7.25036 12.3815 7.14712 12.3605 7.05514 12.3132C6.96317 12.2659 6.88602 12.1941 6.83219 12.1058C6.77835 12.0174 6.74992 11.916 6.75 11.8125V6.18755C6.74989 6.08414 6.77829 5.9827 6.83208 5.89438C6.88586 5.80606 6.96295 5.73428 7.05488 5.68692Z" fill="#DA0083"/>
+        </svg>
+        </a></button>
+    </div>
+    
+    <div  class="seven lg:w-[620px] 2xl:w-full bg-[#F7EEFF] py-14 px-12">
+      <img class="mb-[15px]" src="./src/img/productLanding/Group-5.svg" alt="">
+      <h2 class="text-[60px] leading-[77px] lg:py-7 font-semibold">Coupon <br> Scheduling</h2>
+      <p class="font-normal text-xl leading-[33px] lg:max-w-[511px] 2xl:max-w-[729px]">Provide a more personal touch to your customer in seconds with video messaging Provide a more personal touch to your customer in seconds with video messaging</p>
+      <div class="mt-[15px] leading-[33px] text-[20px] text-[#5E5E5E]">
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]">Selected user roles that are available in WordPress.</span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]"> Allow or Disallow User.</span>
+        </div>
+        <div class="flex items-center gap-2 "> <span class="w-1 h-1 inline-block bg-black rounded-full"></span> <span class="font-normal text-[20px]"> Multiple payment methods.</span>
+        </div>
+      </div>
+      <button class="text-xl text-[#48A400] hover:bg-[#48A400] border-solid border-[#48A400] hover:text-white  mt-[15px] border  font-normal cursor-pointer py-3 rounded-full px-6"><a class="" href=""> See More 
+        <svg class="inline-block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 16.875C6.91142 16.875 4.90838 16.0453 3.43153 14.5685C1.95468 13.0916 1.125 11.0886 1.125 9C1.125 6.91142 1.95468 4.90838 3.43153 3.43153C4.90838 1.95468 6.91142 1.125 9 1.125C11.0886 1.125 13.0916 1.95468 14.5685 3.43153C16.0453 4.90838 16.875 6.91142 16.875 9C16.875 11.0886 16.0453 13.0916 14.5685 14.5685C13.0916 16.0453 11.0886 16.875 9 16.875ZM9 18C11.3869 18 13.6761 17.0518 15.364 15.364C17.0518 13.6761 18 11.3869 18 9C18 6.61305 17.0518 4.32387 15.364 2.63604C13.6761 0.948212 11.3869 0 9 0C6.61305 0 4.32387 0.948212 2.63604 2.63604C0.948212 4.32387 0 6.61305 0 9C0 11.3869 0.948212 13.6761 2.63604 15.364C4.32387 17.0518 6.61305 18 9 18Z" fill="#48A400"/>
+        <path d="M7.05488 5.68692C7.14688 5.63954 7.25018 5.61847 7.35339 5.62601C7.4566 5.63355 7.55573 5.66942 7.63988 5.72967L11.5774 8.54217C11.6503 8.5942 11.7097 8.6629 11.7507 8.74254C11.7917 8.82218 11.8131 8.91047 11.8131 9.00005C11.8131 9.08962 11.7917 9.17791 11.7507 9.25755C11.7097 9.33719 11.6503 9.40589 11.5774 9.45792L7.63988 12.2704C7.55576 12.3306 7.45668 12.3665 7.35352 12.374C7.25036 12.3815 7.14712 12.3605 7.05514 12.3132C6.96317 12.2659 6.88602 12.1941 6.83219 12.1058C6.77835 12.0174 6.74992 11.916 6.75 11.8125V6.18755C6.74989 6.08414 6.77829 5.9827 6.83208 5.89438C6.88586 5.80606 6.96295 5.73428 7.05488 5.68692Z" fill="#48A400"/>
+        </svg>
+        </a></button>
+    </div>
+  </div>
+  
+  </article>
+
+
+
+
+<!----footer-->
+<footer class="bg-no-repeat  px-3 lg:px-0 relative bg-[length:100%] w-full h-fill  bg-[center_top_0rem] " style="background-image:url('./src/img/./Rectangle\ 48.png')">
+  <!---scroll-TOP-BOTTOM-->
+<div class=" absolute w-20 2xl:w-auto 2xl:top-28 md:top-24 top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+  <a href="#" class="top sticky"> <img class=" inline-block" src="./src/img/up button.png" alt=""></a>
+ </div>
+<!----inner----->
+ <div class="flex flex-wrap container mx-auto pt-20 md:pt-40 lg:pt-60 lg:gap-20 gap-10 2xl:gap-24 pb-20">
+  <div>
+      <img class="inline -ml-[82px] mb-6" src="./src/img/image 38.png" alt="">
+      <h2 class="text-3xl font-semibold">Address</h2>
+      <p class="md:w-[360px] text-xl font-normal my-6 text-[#585858] leading-normal">903 Victory Business Centre, Somers 
+          Road North, Portsmouth</p>
+       
+<svg class="inline mr-6" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.6361 5.20703H7.33744C6.6984 5.20703 6.18036 5.72507 6.18036 6.36411V30.6628C6.18036 31.3018 6.6984 31.8198 7.33744 31.8198H31.6361C32.2751 31.8198 32.7932 31.3018 32.7932 30.6628V6.36411C32.7932 5.72507 32.2751 5.20703 31.6361 5.20703Z" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.3297 16.1992V25.4558" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.7014 16.1992V25.4558" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.3297 20.249C18.3297 19.1749 18.7563 18.1449 19.5158 17.3854C20.2753 16.6259 21.3054 16.1992 22.3794 16.1992C23.4535 16.1992 24.4836 16.6259 25.243 17.3854C26.0025 18.1449 26.4292 19.1749 26.4292 20.249V25.4558" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.7014 13.3062C14.6599 13.3062 15.437 12.5291 15.437 11.5706C15.437 10.612 14.6599 9.83496 13.7014 9.83496C12.7428 9.83496 11.9658 10.612 11.9658 11.5706C11.9658 12.5291 12.7428 13.3062 13.7014 13.3062Z" fill="#585858"/>
+</svg>
+
+<svg class="inline" width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.486 7.72781C14.486 4.54585 17.1618 1.89903 20.3438 1.94242C21.4581 1.95529 22.545 2.28972 23.4738 2.90551C24.4026 3.5213 25.1338 4.39225 25.5795 5.41366H30.6851L26.0134 10.0854C25.712 14.7781 23.6346 19.18 20.2037 22.3959C16.7729 25.6118 12.246 27.4005 7.54358 27.3981C2.91527 27.3981 1.75819 25.6625 1.75819 25.6625C1.75819 25.6625 6.3865 23.9269 8.70066 20.4557C8.70066 20.4557 -0.555969 15.8274 1.75819 3.0995C1.75819 3.0995 7.54358 8.88489 14.486 10.042V7.72781Z" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hover:fill-[#543BF5] cursor-pointer " fill="#fff"/>
+</svg>
+
+                  
+  </div>
+  <div class="">
+      <h2 class="text-3xl font-semibold mb-10">Address</h2>
+     <ul class="">
+      <li><a class="text-[#585858] font-normal block mb-5 text-xl" href="">About Us</a></li>
+      <li><a class="text-[#585858] font-normal block  mb-5 text-xl" href=""> Contact Us</a></li>
+      <li><a class="text-[#585858] font-normal block  mb-5 text-xl" href="">FTC Disclosure</a></li>
+      <li><a class="text-[#585858] font-normal text-xl" href="">Lorem Ipsam</a></li>
+     
+  </ul>
+  </div>
+  <div class="">
+      <h2 class="text-3xl font-semibold mb-10">Products</h2>
+     <ul class="">
+      <li class=""><a class="text-[#585858] font-normal block mb-5 text-xl" href="">OptinMonster</a></li>
+      <li class="relative"><a class="text-[#585858] font-normal inline-block  mb-5 text-xl" href="">  WPForms</a> 
+          <span class="py-2 md:px-4 px-3 text-white rounded-full bottom-4 md:-right-6 absolute bg-[#543BF5]">Open</span> 
+          <svg class="inline-block relative md:-right-16 -top-6" width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.0951 10.149C11.2784 9.61273 12.055 9.61273 12.2383 10.149L13.3132 13.2966C13.5498 13.9886 13.9484 14.6172 14.4775 15.1328C15.0065 15.6485 15.6515 16.0368 16.3612 16.2671L19.5875 17.3153C20.1375 17.494 20.1375 18.2513 19.5875 18.43L16.3596 19.4781C15.65 19.7089 15.0052 20.0976 14.4765 20.6134C13.9477 21.1293 13.5494 21.7582 13.3132 22.4503L12.2383 25.5963C12.1988 25.7137 12.1223 25.816 12.0196 25.8885C11.917 25.961 11.7935 26 11.6667 26C11.54 26 11.4165 25.961 11.3138 25.8885C11.2112 25.816 11.1346 25.7137 11.0951 25.5963L10.0202 22.4487C9.78381 21.7569 9.38544 21.1283 8.85668 20.6127C8.32793 20.0971 7.68331 19.7087 6.9739 19.4781L3.74591 18.43C3.62549 18.3915 3.52062 18.3168 3.44628 18.2168C3.37193 18.1167 3.3319 17.9962 3.3319 17.8726C3.3319 17.7491 3.37193 17.6286 3.44628 17.5285C3.52062 17.4284 3.62549 17.3538 3.74591 17.3153L6.9739 16.2671C7.68331 16.0366 8.32793 15.6481 8.85668 15.1325C9.38544 14.6169 9.78381 13.9884 10.0202 13.2966L11.0951 10.149ZM4.65748 1.86307C4.68138 1.7927 4.72741 1.73146 4.78904 1.68806C4.85066 1.64466 4.92475 1.62129 5.00077 1.62129C5.0768 1.62129 5.15089 1.64466 5.21251 1.68806C5.27414 1.73146 5.32017 1.7927 5.34407 1.86307L5.989 3.75133C6.2773 4.59309 6.9539 5.25284 7.81714 5.53397L9.7536 6.16284C9.82577 6.18614 9.88857 6.23103 9.93308 6.29113C9.97759 6.35122 10.0016 6.42346 10.0016 6.49759C10.0016 6.57172 9.97759 6.64397 9.93308 6.70406C9.88857 6.76416 9.82577 6.80904 9.7536 6.83235L7.81714 7.46122C7.39139 7.59954 7.00454 7.83264 6.68722 8.14206C6.3699 8.45148 6.13085 8.82871 5.989 9.24386L5.34407 11.1321C5.32017 11.2025 5.27414 11.2637 5.21251 11.3071C5.15089 11.3505 5.0768 11.3739 5.00077 11.3739C4.92475 11.3739 4.85066 11.3505 4.78904 11.3071C4.72741 11.2637 4.68138 11.2025 4.65748 11.1321L4.01255 9.24386C3.8707 8.82871 3.63165 8.45148 3.31433 8.14206C2.99702 7.83264 2.61016 7.59954 2.18441 7.46122L0.247952 6.83235C0.175784 6.80904 0.112982 6.76416 0.0684699 6.70406C0.023958 6.64397 0 6.57172 0 6.49759C0 6.42346 0.023958 6.35122 0.0684699 6.29113C0.112982 6.23103 0.175784 6.18614 0.247952 6.16284L2.18441 5.53397C2.61016 5.39565 2.99702 5.16255 3.31433 4.85313C3.63165 4.54371 3.8707 4.16648 4.01255 3.75133L4.65748 1.86307ZM16.4379 0.158442C16.4543 0.112172 16.4852 0.0720505 16.5261 0.0436546C16.567 0.0152587 16.616 0 16.6662 0C16.7164 0 16.7654 0.0152587 16.8063 0.0436546C16.8472 0.0720505 16.878 0.112172 16.8945 0.158442L17.3245 1.4162C17.5161 1.97845 17.9677 2.41883 18.5443 2.6057L19.8342 3.02495C19.8816 3.041 19.9228 3.07106 19.9519 3.11095C19.981 3.15085 19.9967 3.19861 19.9967 3.24758C19.9967 3.29655 19.981 3.34431 19.9519 3.38421C19.9228 3.4241 19.8816 3.45416 19.8342 3.47021L18.5443 3.88946C18.2602 3.98163 18.002 4.13714 17.7902 4.34362C17.5785 4.5501 17.419 4.80188 17.3245 5.07896L16.8945 6.33672C16.878 6.38299 16.8472 6.42311 16.8063 6.45151C16.7654 6.4799 16.7164 6.49516 16.6662 6.49516C16.616 6.49516 16.567 6.4799 16.5261 6.45151C16.4852 6.42311 16.4543 6.38299 16.4379 6.33672L16.0079 5.07896C15.9134 4.80188 15.7539 4.5501 15.5422 4.34362C15.3304 4.13714 15.0722 3.98163 14.7881 3.88946L13.4999 3.47021C13.4524 3.45416 13.4113 3.4241 13.3821 3.38421C13.353 3.34431 13.3374 3.29655 13.3374 3.24758C13.3374 3.19861 13.353 3.15085 13.3821 3.11095C13.4113 3.07106 13.4524 3.041 13.4999 3.02495L14.7897 2.6057C15.3663 2.41883 15.8179 1.97845 16.0096 1.4162L16.4379 0.160067V0.158442Z" fill="#FFC000"/>
+          </svg>
+          </li>
+      <li><a class="text-[#585858] font-normal block  mb-5 text-xl" href="">MonsterInsights</a></li>
+      <li><a class="text-[#585858] font-normal block mb-5 text-xl" href=""> WP Mail SMTP</a></li>
+      <li><a class="text-[#585858] font-normal text-xl" href="">  All in One SEO</a></li>
+     
+  </ul>
+  </div>
+  <div class="">
+      <h2 class="text-3xl font-semibold mb-10">Information</h2>
+     <ul class="">
+      <li class=""><a class="text-[#585858] font-normal block mb-5 text-xl" href="">FAQ</a></li>
+      <li><a class="text-[#585858] font-normal inline-block  mb-5 text-xl" href="">  Blog Info</a>    
+          </li>
+      <li><a class="text-[#585858] font-normal block  mb-5 text-xl" href="">Pages</a></li>
+      <li><a class="text-[#585858] font-normal block mb-5 text-xl" href=""> Conditon</a></li>
+      <li><a class="text-[#585858] font-normal text-xl" href="">  Terms</a></li>
+     
+  </ul>
+  </div>
+  <div>
+      <h2 class="text-3xl font-semibold">Subscribe</h2>
+      <p class="w-[296px] text-xl font-normal my-9 text-[#585858] leading-normal">Subscribe to our email newsletter to receive updates.</p>
+       
+<input class="p-4" type="email" name="" id="" placeholder="Email address"> <a class=" py-5 rounded-md px-5 inline-blocks bg-[#543BF5]" href=""> 
+<svg class="inline" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.9597 0.771522C18.0006 0.669302 18.0107 0.55732 17.9885 0.449461C17.9664 0.341601 17.9131 0.242607 17.8353 0.164751C17.7574 0.0868943 17.6584 0.0335997 17.5506 0.0114741C17.4427 -0.0106515 17.3307 -0.00063516 17.2285 0.0402813L0.863689 6.58657H0.862564L0.354081 6.78907C0.257774 6.82749 0.173959 6.89178 0.111895 6.97484C0.0498308 7.0579 0.0119333 7.1565 0.00238854 7.25975C-0.00715624 7.363 0.0120231 7.46688 0.0578081 7.55991C0.103593 7.65295 0.174202 7.73151 0.261834 7.78693L0.723068 8.07943L0.724193 8.08168L6.34337 11.6569L9.9185 17.2762L9.92075 17.2784L10.2132 17.7397C10.2688 17.827 10.3474 17.8972 10.4404 17.9427C10.5334 17.9882 10.6371 18.0072 10.7401 17.9975C10.8432 17.9879 10.9416 17.95 11.0245 17.888C11.1073 17.8261 11.1715 17.7424 11.21 17.6463L17.9597 0.771522ZM15.8977 2.89775L7.46721 11.3284L7.22534 10.9481C7.18103 10.8784 7.12188 10.8192 7.0521 10.7749L6.67186 10.533L15.1023 2.10238L16.4275 1.57251L15.8988 2.89775H15.8977Z" fill="white"/>
+</svg>
+</a>
+
+                  
+  </div>
+
+ </div>
+ <hr>
+ <div class="text-center py-10">
+  <p class="text-[#585858] text-xl font-normal">Copyright Jompha 2022 all right resarves</p>
+ </div>
+</footer> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+/***nav***/
+/**---
+ nav-BAR
+  --**/
+  const btn = document.getElementById('menu-btn');
+const nav = document.getElementById('menu');
+
+btn.addEventListener('click', ()=>{
+btn.classList.toggle('open');
+nav.classList.toggle('flex');
+nav.classList.toggle('hidden')
+});
+ /**---
+ END-nav-BAR
+  --**/
+
+/***video-play-btn***/
+
+
+$(".vpop").on('click', function(e) {
+  e.preventDefault();
+  $("#video-popup-overlay,#video-popup-iframe-container,#video-popup-container,#video-popup-close").show();
+  
+  var srchref='',autoplay='',id=$(this).data('id');
+  // if($(this).data('type') == 'vimeo') var srchref="//player.vimeo.com/video/";
+  if($(this).data('type') == 'youtube') var srchref="https://www.youtube.com/embed/";
+  
+  if($(this).data('autoplay') == true) autoplay = '?autoplay=1';
+  
+  $("#video-popup-iframe").attr('src', srchref+id+autoplay);
+  
+  $("#video-popup-iframe").on('load', function() {
+    $("#video-popup-container").show();
+  });
+});
+
+$("#video-popup-close, #video-popup-overlay").on('click', function(e) {
+  $("#video-popup-iframe-container,#video-popup-container,#video-popup-close,#video-popup-overlay").hide();
+  $("#video-popup-iframe").attr('src', '');
+});
+
+
+ 
+    </script>
+
+</body>
+</html>
