@@ -291,4 +291,128 @@ transform: scale(1.2);
   Humburger-menu
   --**/
 
+ /*******/
+
+/* Slideshow container */
+.active-text.activeTwo{
+animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+  0%{
+    margin-top: 25px;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
+
+
+.mySlides {
+  display: none;
+  
+}
+
+
+
+.prev, .next {
+    /* cursor: pointer;
+    width: auto;
+   
+    padding: 36px;
+   
+    font-size: 20px; */
+    
+    user-select: none;
+}
+
+.dot {
+
+  transition: background-color 0.6s ease;
+}
+
+
+.active, .dot:hover {
  
+  border: 1px solid #000 !important;
+  width: 100px !important;
+  height: 100px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .active, .dot:hover {
+   
+    height: auto !important;
+  }
+
+}
+
+
+
+
+
+span.dot {
+    width: 85px;
+    height: 85px;
+}
+
+.dot {
+    cursor: pointer;
+
+    margin: 0 2px;
+   
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+
+
+
+/* SWITCH STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.switch-wrapper {
+  position: relative;
+  display: inline-flex;
+ 
+}
+
+.switch-wrapper [type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"],
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"] {
+  color: var(--white);
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"]:hover,
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"]:hover {
+  background: transparent;
+}
+
+.switch-wrapper
+  [type="radio"]:checked#monthly
+  + label[for="yearly"]
+  ~ .highlighter {
+  transform: none;
+}
+
+.switch-wrapper
+  [type="radio"]:checked#yearly
+  + label[for="monthly"]
+  ~ .highlighter {
+  transform: translateX(103%);
+}
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"], .switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"] {
+  color: white;
+}
+
+
+table .hide {
+  display: none;
+}
+
+
+
